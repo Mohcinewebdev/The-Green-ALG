@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطوع</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>شارك في الحملة التطوعية</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="news.html">الاخبار</a></li>
+                <li><a href="about.html">تصميمات</a></li>
+                <li><a href="order.html">تطوع</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="order-main">
+        <form class="order-form" action="#" method="post">
+            <label for="name">الاسم </label> <br>
+            <input type="text" name="name" id="name" placeholder="ادخل اسمك" required> <br>
+
+            <label for="second-name">اللقب</label> <br>
+            <input type="text" name="second-name" id="second-name" placeholder="ادخل لقبك" required> <br>
+
+            <label for="phone-number">رقم الهاتف</label> <br>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="+213000000000" required> <br>
+
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email" placeholder="البريد الالكتروني"> <br>
+
+            <label for="date">اختر نوع التطوع </label> <br>
+            <select name="selection" id="selection">
+                <option value="حملة غرس الاشجار">حملة غرس الاشجار</option>
+                <option value="حملة تنظيف ">حملة تنظيف</option>
+            </select> <br>
+
+            <label for="message">اترك رسالة</label> <br>
+            <textarea name="message" id="message" placeholder="اكتب هنا..." cols="20" rows="5"></textarea> <br>
+
+            <button class="button-order" type="submit">تسجيل</button>
+            <button class="button-order-reset" type="reset">اعادة ضبط</button>
+             <a href="index.html" class="button-order-cancel"> الغاء</a>
+        </form>
+    </main>
+    
+</body>
+</html>
