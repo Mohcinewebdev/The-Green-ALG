@@ -59,6 +59,8 @@ header h1{
 
 .green-alg-logo{
     justify-content: center;
+    width: 200px;
+    height: 200px;
 }
 
 main .first-frame-video{
@@ -230,6 +232,9 @@ footer p{
 }
 
 @media(max-width:450px){
+    .homepage-header{
+        width: 100%;
+    }
     header h1{
         font-size: 1.1rem;
     }
@@ -246,6 +251,12 @@ footer p{
 
     .first-figure{
         width: 85%;
+    }
+
+     #nd-green-logo{
+        width: 0;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -266,5 +277,15 @@ footer p{
 
     .first-figure{
         width: 60%;
+    }
+
+    .green-alg-logo{
+        display: flex;
+        overflow: hidden;
+    }
+    #nd-green-logo{
+        width: 0;
+        margin: 0;
+        padding: 0;
     }
 }
