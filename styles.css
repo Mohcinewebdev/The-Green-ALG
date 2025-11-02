@@ -19,31 +19,66 @@ body{
 }
 
 .first-figure{
-    border-radius: 10px;
-    transition: 0.3s;
-    box-shadow: 1px 6px 11px black;
-    background-color: rgba(119, 219, 119, 0.699);
-    padding-bottom: 10px;
     width: 400px;
+    border-radius: 10px;
+    background-color: rgba(49, 214, 49, 0.774);
+    box-shadow: 1px 5px 12px #333;
+    transition: 0.3s;
 }
-
 .first-figure:hover{
-    background-color: green;
-    transform: translateY(-8px);
-    box-shadow: 2px 12px 22px black;
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 20px #222;
+}
+.first-figure h2{
+    font-size: 1.8rem;
+}
+.first-figure p{
+    font-size: 1.5rem;
+    padding: 8px;
+    font-style: italic;
 }
 
-figcaption:hover{
-    color: white;
+.social-media-figure ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.social-media-figure ul li{
+    list-style: none;
+}
+.social-media-figure a{
+    text-decoration: none;
+    padding: 5px;
 }
 
-.image-home{
+.img-home{
     width: 100%;
-    height: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-figure{
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 90%;
+    transition: 0.3s;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.btn-figure:hover{
+    background-color: rgba(255, 255, 255, 0.699);
+    color: green;
+}
+.btn-figure:focus{
+    outline-color: green;
 }
 
 .homepage-header{
-    padding: 10px 20px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,9 +92,8 @@ header h1{
     text-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
 
-.green-alg-logo{
-    justify-content: center;
-    width: 200px;
+.green-alg-img{
+    width: 180px;
     height: 200px;
 }
 
@@ -231,12 +265,12 @@ footer p{
     background-color: rgb(58, 202, 58);
 }
 
-@media(max-width:450px){
+@media(max-width:450px) {
     .homepage-header{
         width: 100%;
     }
     header h1{
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .navbar ul{
@@ -249,20 +283,26 @@ footer p{
         height: 250px;
     }
 
-    .first-figure{
-        width: 85%;
+      .first-figure{
+        width: 90%;
     }
 
-     #nd-green-logo{
-        width: 0;
-        margin: 0;
-        padding: 0;
+    .green-alg-logo{
+        width: 100px;
     }
+
+    .green-alg-img{
+        width: 60px;
+        height: 90px;
+    }
+     
 }
 
 @media(max-width:800px){
     header h1{
         font-size: 1.4rem;
+        margin-left: 0;
+        padding: 0;
     }
 
     .navbar ul{
@@ -276,16 +316,15 @@ footer p{
     }
 
     .first-figure{
-        width: 60%;
+        width: 90%;
     }
 
     .green-alg-logo{
-        display: flex;
-        overflow: hidden;
+        width: 100px;
     }
-    #nd-green-logo{
-        width: 0;
-        margin: 0;
-        padding: 0;
+
+    .green-alg-img{
+        width: 60px;
+        height: 90px;
     }
 }
