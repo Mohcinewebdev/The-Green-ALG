@@ -256,7 +256,7 @@ footer p{
     background-color: rgb(58, 202, 58);
 }
 
-@media(max-width:450px) {
+@media(max-width:600px) {
     .homepage-header{
         width: 100%;
     }
