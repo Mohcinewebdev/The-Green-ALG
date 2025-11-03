@@ -198,7 +198,6 @@ footer p{
 }
 
 .search-about form{
-    width: 100%;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -218,7 +217,8 @@ footer p{
 
 .table-about{
     background-color: #f9f9f9f5;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
     border-radius: 8px;
 }
@@ -243,7 +243,7 @@ footer p{
     text-decoration: none;
     color: white;
     background-color: green;
-    padding: 2px 8px;
+    padding: 6px 8px;
     border-radius: 8px;
     transition: 0.3s;
 }
@@ -373,6 +373,19 @@ footer p{
         width: 40px;
         height: 60px;
     }
+
+    .search-about input{
+    width: 90%;
+    }
+    .search-about select{
+    width: 90%;
+    }
+    .table-about th{
+        font-size: 1rem;
+    }
+    .table-about td{
+        font-size: 1rem;
+    }
      
 }
 
@@ -403,5 +416,12 @@ footer p{
     .green-alg-img{
         width: 90px;
         height: 120px;
+    }
+
+        .search-about input{
+    width: 90%;
+    }
+    .search-about select{
+    width: 90%;
     }
 }
