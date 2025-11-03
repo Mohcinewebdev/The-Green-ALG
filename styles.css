@@ -19,6 +19,7 @@ body{
 }
 
 .first-figure{
+    text-align: center;
     width: 400px;
     border-radius: 10px;
     background-color: rgba(49, 214, 49, 0.774);
@@ -164,8 +165,98 @@ footer{
 footer p{
     font-size: large;
 }
+.social-media ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
 .social-media a{
     text-decoration: none;
+}
+
+.section-about{
+    background-color: rgba(0, 128, 0, 0.658);
+    text-align: center;
+    padding: 10px;
+}
+.title-about{
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+.paragraph-about{
+    font-size: 1.5rem;
+    color: #111;
+}
+
+.search-about{
+    padding: 10px;
+    background-color: rgba(82, 128, 82, 0.377);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.search-about form{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search-about input{
+    width: 47%;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+}
+.search-about select{
+    width: 47%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.table-about{
+    background-color: #f9f9f9f5;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.table-about tr{
+    text-align: center;
+}
+.table-about th{
+    padding: 5px;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #111;
+    background-color: darkgreen;
+}
+.table-about td{
+    border-bottom: 1px solid #111;
+    margin: 0;
+    padding: 8px;
+    color: rgb(16, 65, 16);
+    font-size: 1.1rem;
+}
+.go-map{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 2px 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.go-map:hover{
+    background-color: #2cf325;
+    box-shadow: 2px 5px 24px #111;
+}
+.wilaya{
+    border-radius: 8px 0 0 0;
+}
+.tawajouh{
+    border-radius: 0 8px 0 0;
+    width: 100px;
 }
 
 .order-form{
@@ -204,7 +295,7 @@ footer p{
 
 .order-form textarea{
     padding: 10px;
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -257,29 +348,25 @@ footer p{
 }
 
 @media(max-width:600px) {
-    .homepage-header{
-        width: 100%;
+     .navbar{
+        margin-top: 30px;
     }
     header h1{
         font-size: 0.8rem;
     }
 
     .navbar ul{
-        gap: 2px;
+        gap: 5px;
         flex-wrap: wrap;
     }
 
     .first-frame-video iframe{
-        width: 95%;
+        width: 92%;
         height: 250px;
     }
 
       .first-figure{
-        width: 96%;
-    }
-
-    .green-alg-logo{
-        width: 100px;
+        width: 90%;
     }
 
     .green-alg-img{
@@ -289,7 +376,10 @@ footer p{
      
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
+    .navbar{
+        margin-top: 30px;
+    }
     header h1{
         font-size: 1.4rem;
         margin-left: 0;
@@ -297,7 +387,7 @@ footer p{
     }
 
     .navbar ul{
-        gap: 5px;
+        gap: 15px;
         flex-wrap: wrap;
     }
 
@@ -310,12 +400,8 @@ footer p{
         width: 90%;
     }
 
-    .green-alg-logo{
-        width: 100px;
-    }
-
     .green-alg-img{
-        width: 60px;
-        height: 90px;
+        width: 90px;
+        height: 120px;
     }
 }
