@@ -130,6 +130,10 @@ main .first-frame-video{
     background-color: rgb(108, 184, 108);
 }
 
+.navbar :where(#menu-close-btn, #menu-open-btn){
+    display: none
+}
+
 main .paragraph{
     padding: 20px;
     text-align: right;
@@ -193,8 +197,9 @@ footer p{
 .search-about{
     padding: 10px;
     background-color: rgba(82, 128, 82, 0.377);
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
+    width: 90%;
 }
 
 .search-about form{
@@ -351,13 +356,83 @@ footer p{
      .navbar{
         margin-top: 30px;
     }
-    header h1{
-        font-size: 0.8rem;
+     .navbar ul{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: white;
+        width: 220px;
+        margin-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navbar ul a{
+        display: block;
+        margin-top: 15px;
     }
 
-    .navbar ul{
-        gap: 5px;
-        flex-wrap: wrap;
+    .navbar :where(#menu-close-btn, #menu-open-btn) {
+        display: block;
+        color: darkgreen;
+        font-size: 1.3rem;
+        border: none;
+        background-color: white;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 8px 20px;
+        width: auto;
+    }
+    .navbar :where(#menu-close-btn, #menu-open-btn):hover{
+        background-color: #317c2e;
+        color: white;
+    }
+
+    .navbar #menu-close-btn{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .navbar #menu-open-btn{
+        color: white;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        background-color: #317c2e;
+        width: auto;
+    }
+    .navbar #menu-open-btn:hover{
+        background-color: rgb(64, 160, 64);
+    }
+
+     body.show-mobile-menu .navbar ul{
+        left: 0;
+    }
+
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(3px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .other-pages .navbar #menu-open-btn{
+        position: absolute;
+        top: 10px;
+        padding: 10px 15px;
+        right: 10px;
+    }
+
+    header h1{
+        font-size: 0.8rem;
     }
 
     .first-frame-video iframe{
@@ -393,15 +468,84 @@ footer p{
     .navbar{
         margin-top: 30px;
     }
+     .navbar ul{
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        background-color: white;
+        width: 250px;
+        margin-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: left 0.2s ease;
+    }
+    .navbar ul a{
+        display: block;
+        margin-top: 20px;
+    }
+    .navbar :where(#menu-close-btn, #menu-open-btn) {
+        display: block;
+        color: darkgreen;
+        font-size: 1.3rem;
+        border: none;
+        background-color: white;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 8px 20px;
+        width: auto;
+    }
+    .navbar :where(#menu-close-btn, #menu-open-btn):hover{
+        background-color: #317c2e;
+        color: white;
+    }
+
+    .navbar #menu-close-btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .navbar #menu-open-btn{
+        color: white;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        background-color: #317c2e;
+        width: auto;
+    }
+    .navbar #menu-open-btn:hover{
+        background-color: rgb(64, 160, 64);
+    }
+
+    body.show-mobile-menu .navbar ul{
+        left: 0;
+    }
+
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(3px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .other-pages .navbar #menu-open-btn{
+        position: absolute;
+        top: 10px;
+        padding: 15px 20px;
+        right: 10px;
+    }
+
     header h1{
         font-size: 1.4rem;
         margin-left: 0;
         padding: 0;
-    }
-
-    .navbar ul{
-        gap: 15px;
-        flex-wrap: wrap;
     }
 
     .first-frame-video iframe{
