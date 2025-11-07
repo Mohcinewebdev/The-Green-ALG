@@ -16,10 +16,11 @@
                 <button id="menu-close-btn" class="fas fa-times"></button>
 
                 <li><a href="index.html">الصفحة الرئيسية</a></li>
-                <li><a href="news.html">الاخبار</a></li>
+                <li><a href="news.html">طلب الأشجار</a></li>
                 <li><a href="about.html">مواقع التشجير</a></li>
                 <li><a href="order.html">تطوع</a></li>
-                <li><a href="contact.html">نصائح</a></li>
+                <li><a href="advice.html">نصائح</a></li>
+                <li><a href="problems.html">شكاوى</a></li>
             </ul>
 
              <button id="menu-open-btn" class="fas fa-bars"></button>
@@ -27,7 +28,16 @@
     </header>
 
     <main class="order-main">
+        <h2>التفاصيل</h2>
+        <ul>
+            <li>صفحتنا تقدم شهادات للمشاركين في حملاتنا. </li>
+           <li> يمكنكم المشاركة وذلك بتسجيل اسمائكم في هذه الصفحة. </li>
+           <li> كل متطوع يسجل حضوره يحصل على نقاط و شهادة مشاركة. </li>
+        </ul>
+
+        <div class="order-full">
         <form class="order-form" action="#" method="post">
+             <h2 class="my-h2-order-form">سجل الان</h2>
             <label for="name">الاسم </label> <br>
             <input type="text" name="name" id="name" placeholder="ادخل اسمك" required> <br>
 
@@ -49,10 +59,49 @@
             <label for="message">اترك رسالة</label> <br>
             <textarea name="message" id="message" placeholder="اكتب هنا..." cols="20" rows="5"></textarea> <br>
 
+            <div class="btns-order">
             <button class="button-order" type="submit">تسجيل</button>
             <button class="button-order-reset" type="reset">اعادة ضبط</button>
              <a href="index.html" class="button-order-cancel"> الغاء</a>
+             </div>
         </form>
+
+        <section class="under-form">
+            <h2>بعض الصور من اكبر حملة وطنية لغرس الاشجار</h2>
+                <div class="under-form-cards">
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/child.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/child2-inchaalah.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/planting-time.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/cleaning-nature2.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/farmer-amin.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/child.jpg" alt="">
+                    </div>
+                     <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/cleaning-nature2.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/farmer-amin.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/child.jpg" alt="">
+                    </div>
+                    <div class="under-form-card">
+                        <img class="under-form-img" src="pictures/child.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+        </div>
     </main>
     
     <script src="scrript.js"></script>

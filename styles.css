@@ -98,7 +98,7 @@ header h1{
     height: 200px;
 }
 
-main .first-frame-video{
+.first-frame-video{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -134,8 +134,9 @@ main .first-frame-video{
     display: none
 }
 
-main .paragraph{
+.homepage-main .paragraph{
     padding: 20px;
+    direction: rtl;
     text-align: right;
     color: black;
     font-family: serif;
@@ -144,13 +145,14 @@ main .paragraph{
 
 }
 
-main .paragraph h3{
+.homepage-main .paragraph h3{
     text-align: right;
     margin-right: 55px;
 }
 
 .home-new{
-    color: rgb(0, 94, 0);
+    color: black;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 20px;
     text-align: center;
@@ -158,6 +160,41 @@ main .paragraph h3{
 
 figure{
     text-align: center;
+}
+.tawya-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tawya-card{
+    cursor: pointer;
+    width: 30%;
+    background-color: #317c2e;
+    text-align: center;
+    box-shadow: 1px 5px 12px #333;
+    transition: 0.3s;
+}
+.tawya-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 10px 24px #222;
+    background-color: #f9f9f9;
+}
+.tawya-card a{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+.tawya-card a:hover{
+    color: green;
+}
+.my-h2-tawya{
+    text-align: center;
+    font-size: 2rem;
+}
+.cleaning-img{
+    width: 100%;
+    height: 350px;
 }
 
 
@@ -264,10 +301,35 @@ footer p{
     width: 100px;
 }
 
-.order-form{
-    color: black;
-    font-weight: bold;
+.order-main h2{
+    text-align: center;
+    background-color: #317c2e;
+    padding: 20px;
+    color: white;
+}
+.order-main ul{
+    background-color: white;
+    color: rgb(99, 40, 6);
+    width: 80%;
     margin: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 1px 5px 12px #333;
+    list-style-position: inside;
+    direction: rtl;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.order-form{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    direction: rtl;
+    font-weight: bold;
     margin-bottom: 30px;
     padding: 15px;
     background-color: rgba(0, 128, 0, 0.26);
@@ -275,6 +337,15 @@ footer p{
     justify-content: center;
     text-align: center;
     border-radius: 10px;
+}
+.btns-order{
+    display: flex;
+    gap: 10px;
+}
+.my-h2-order-form{
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .order-form input{
@@ -327,13 +398,12 @@ footer p{
 }
 
 .order-form .button-order-cancel{
-    width: 80px;
+    width: 70px;
     font-size: large;
     padding: 10px;
     margin-top: 15px;
     border-radius: 10px;
     background-color: rgb(236, 177, 177);
-    cursor: pointer;
     transition: 0.3s;
     margin-left: 20px;
     text-decoration: none;
@@ -350,6 +420,128 @@ footer p{
 
 .order-form .button-order:hover{
     background-color: rgb(58, 202, 58);
+}
+.order-full{
+    direction: rtl;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.under-form h2{
+    margin-left: 20px;
+    margin-top: 0;
+}
+.under-form-img{
+    width: 100%;
+    height: 100%;
+}
+.under-form-cards{
+    overflow-y: scroll;
+    margin-left: 20px;
+    background-color: rgba(0, 112, 0, 0.459);
+    border: 1px solid #111;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 785px;
+}
+.under-form-card{
+    border: 1px solid #222;
+    width: 48%;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-advice .my-h2{
+    text-align: center;
+    background-color: #317c2e;
+    color: white;
+    padding: 20px;
+}
+
+.advices{
+    background-color: #2c802949;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+.first-advice{
+    border-radius: 8px;
+    text-align: center;
+    background-color: #78f374b4;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.advice-imgs{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px 8px 0 0;
+}
+.first-advice h2{
+    padding: 1px 8px;
+}
+.first-advice p{
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+.view-more-advices{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    transition: 0.3s;
+    border: 1px solid green;
+    margin-top: auto;
+}
+.view-more-advices:hover{
+    background-color: white;
+    color: green;
+}
+
+.alg-map iframe{
+    width: 100%;
+    height: 600px;
+}
+.alg-map{
+    text-align: center;
+    background-color: #1d7e1979;
+    padding: 15px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.my-h2-news{
+    padding: 20px;
+    background-color: #317c2ec4;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.problems-section{
+    background-color: #317c2ec4;
+    text-align: center;
+    padding: 20px;
+}
+.my-h2-problems{
+    color: white;
+    font-size: 2rem;
+}
+.problems-section p{
+    font-size: 1.3rem;
+    color: #111;
 }
 
 @media(max-width:600px) {
@@ -372,7 +564,6 @@ footer p{
     }
     .navbar ul a{
         display: block;
-        margin-top: 15px;
     }
 
     .navbar :where(#menu-close-btn, #menu-open-btn) {
@@ -384,7 +575,7 @@ footer p{
         transition: 0.3s;
         cursor: pointer;
         border-radius: 8px;
-        padding: 8px 20px;
+        padding: 8px 15px;
         width: auto;
     }
     .navbar :where(#menu-close-btn, #menu-open-btn):hover{
@@ -401,7 +592,7 @@ footer p{
         color: white;
         position: absolute;
         top: 150px;
-        right: 20px;
+        right: 10px;
         background-color: #317c2e;
         width: auto;
     }
@@ -427,7 +618,7 @@ footer p{
     .other-pages .navbar #menu-open-btn{
         position: absolute;
         top: 10px;
-        padding: 10px 15px;
+        padding: 8px 10px;
         right: 10px;
     }
 
@@ -461,6 +652,46 @@ footer p{
     .table-about td{
         font-size: 1rem;
     }
+
+    .main-advice .advices{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-advice{
+        width: 100%;
+    }
+
+    .tawya-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .tawya-card{
+        width: 95%;
+    }
+
+    .order-full{
+    flex-direction: column;
+    align-items: center;
+    }
+    .order-form{
+        margin-right: 0;
+        background-color: rgba(1, 82, 1, 0.479);
+    }
+    .under-form h2{
+        margin-left: 0;
+    }
+    .under-form-cards{
+        margin: auto;
+        width: 90%;
+    }
+    .under-form-card{
+        width: 95%;
+    }
+
+    .alg-map{
+        width: 90%;
+    }
      
 }
 
@@ -481,10 +712,10 @@ footer p{
         flex-direction: column;
         align-items: center;
         transition: left 0.2s ease;
+        overflow: scroll;
     }
     .navbar ul a{
         display: block;
-        margin-top: 20px;
     }
     .navbar :where(#menu-close-btn, #menu-open-btn) {
         display: block;
@@ -495,7 +726,7 @@ footer p{
         transition: 0.3s;
         cursor: pointer;
         border-radius: 8px;
-        padding: 8px 20px;
+        padding: 8px 15px;
         width: auto;
     }
     .navbar :where(#menu-close-btn, #menu-open-btn):hover{
@@ -512,7 +743,7 @@ footer p{
         color: white;
         position: absolute;
         top: 150px;
-        right: 20px;
+        right: 10px;
         background-color: #317c2e;
         width: auto;
     }
@@ -535,10 +766,10 @@ footer p{
         background: rgba(0, 0, 0, 0.2);
     }
 
-    .other-pages .navbar #menu-open-btn{
+    .other-pages  #menu-open-btn{
         position: absolute;
         top: 10px;
-        padding: 15px 20px;
+        padding: 10px 15px;
         right: 10px;
     }
 
@@ -562,10 +793,48 @@ footer p{
         height: 120px;
     }
 
-        .search-about input{
+    .search-about input{
     width: 90%;
     }
     .search-about select{
     width: 90%;
     }
+
+    .main-advice .advices{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-advice{
+        width: 100%;
+    }
+
+    .tawya-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .tawya-card{
+        width: 90%;
+    }
+
+    .order-full{
+    flex-direction: column;
+    align-items: center;
+    }
+    .order-form{
+        margin-right: 0;
+        background-color: rgba(1, 82, 1, 0.479);
+    }
+    .under-form h2{
+        margin-left: 0;
+    }
+    .under-form-cards{
+        width: 98%;
+        margin: auto;
+    }
+
+    .alg-map{
+        width: 90%;
+    }
+
 }
