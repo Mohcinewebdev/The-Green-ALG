@@ -29,9 +29,31 @@
 
     <main class="main-news">
         <h2 class="my-h2-news">اتصل بأقرب مشتلة أشجار</h2>
+          <form action="#" method="post" class="form-map">
+            <input type="text" id="search" name="search" placeholder="إبحث هنا">
+        </form>
         <div class="alg-map">
        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3993902.712434005!2d3.948664502311481!3d34.71162114913336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2KzZhdmK2Lkg2YXYtNin2KrZhCDYp9mE2KzYstin2KbYsQ!5e0!3m2!1sfr!2sdz!4v1762527160699!5m2!1sfr!2sdz"
          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="incase-map">
+            <p>في حالة لم تجد الأشجار التي تبحث عنها في المشتلة، يمكننا مساعدتك في هذا. <br>
+             ما عليك إلا ملئ المعلومات التالية لنتمكن بالإتصال بك
+            </p>
+            <form action="" class="incase-form-map">
+                <div class="first-input-incase">
+                <input type="text" id="text" name="text" placeholder="الإسم و اللقب" required>
+                <input type="tel" id="text" name="text" placeholder="رقم الهاتف" required>
+                </div>
+                <div class="second-input-incase">
+                <input type="text" id="text" name="text" placeholder="الولاية" required>
+                <input type="text" id="text" name="text" placeholder="نوع الشجرة" required>
+                </div>
+                <div class="incase-submit">
+                <input type="submit" value="طلب">
+                </div>
+            </form>
         </div>
     </main>
     

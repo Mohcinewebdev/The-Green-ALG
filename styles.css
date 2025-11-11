@@ -544,6 +544,89 @@ footer p{
     color: #111;
 }
 
+.form-map{
+    text-align: center;
+    padding-bottom: 25px;
+    width: 60%;
+    margin: auto;
+}
+.form-map input{
+    padding: 12px;
+    border: 1px solid green;
+    color: darkgreen;
+    font-size: 1.1rem;
+    outline-color: green;
+    direction: rtl;
+    width: 100%;
+    margin: auto;
+}
+.incase-map p{
+    text-align: center;
+    color: rgb(66, 5, 5);
+    background-color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 35px;
+}
+.incase-form-map{
+    direction: rtl;
+    width: 95%;
+    margin: auto;
+}
+.first-input-incase, .second-input-incase{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.incase-form-map input{
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid green;
+    outline-color: green;
+    width: 100%;
+}
+.incase-submit{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.incase-submit input{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+}
+.incase-submit input:hover{
+    background-color: rgb(179, 245, 163);
+    color: darkgreen;
+}
+
+.under-problems-section{
+    background-color: #f9f9f9bb;
+    padding: 20px;
+}
+.under-problems-section h2{
+    text-align: center;
+    color: green;
+}
+.problems-form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    direction: rtl;
+}
+.problems-form input{
+    padding: 10px;
+    background-color: #317c2e;
+    color: white;
+}
+.problems-form input::placeholder{
+    color: white;
+}
+
 @media(max-width:600px) {
      .navbar{
         margin-top: 30px;
@@ -631,6 +714,10 @@ footer p{
         height: 250px;
     }
 
+    .advices{
+        margin: 0;
+        border-radius: 0;
+    }
       .first-figure{
         width: 90%;
     }
@@ -691,6 +778,19 @@ footer p{
 
     .alg-map{
         width: 90%;
+    }
+
+    .form-map{
+        width: 80%;
+    }
+    .first-input-incase, .second-input-incase{
+        flex-direction: column;
+        align-items: center;
+    }
+    .incase-submit input{
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: bold;
     }
      
 }
